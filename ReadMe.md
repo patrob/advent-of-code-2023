@@ -10,11 +10,11 @@
 
 ### How to test
 
-> Run the command `npm test`
+-   Run the command `npm test`
 
 ## Commentary on Days
 
 ### Day 1
 
-- Part 1 - Very easy w/ a Regex
-- Part 2 - Very sneaky w/ numbers like `eightwo` and `oneight`
+-   Part 1 - Very easy w/ a Regex
+-   Part 2 - Very sneaky w/ numbers like `eightwo` and `oneight`
