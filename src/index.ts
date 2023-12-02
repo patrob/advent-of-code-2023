@@ -1,5 +1,3 @@
-import { Day01 } from './day01/day01';
+import { runAll } from "./days";
 
-const days = [new Day01()];
-
-days.forEach((day) => day.run());
+runAll();
