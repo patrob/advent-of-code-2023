@@ -1,4 +1,4 @@
-import { Day02 } from "./day02";
+import Day02 from "./day02";
 
 describe("Day 02", () => {
     let day02: Day02;

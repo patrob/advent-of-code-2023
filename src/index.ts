@@ -1,3 +1,3 @@
-import { runAll } from "./days";
+import runAll from "./days";
 
 runAll();

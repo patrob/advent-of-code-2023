@@ -1,6 +1,6 @@
-import { readFile } from "./utilities/file-reader";
+import readFile from "./utilities/file-reader";
 
-export abstract class Day {
+export default abstract class Day {
     protected inputData: string[] = [];
 
     constructor(protected day: number) {}

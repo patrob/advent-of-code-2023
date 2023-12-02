@@ -1,11 +1,12 @@
-import { Day } from "./day";
-import { day01 } from "./day01";
-import { day02 } from "./day02";
+import Day01 from "./day01/day01";
+import Day02 from "./day02/day02";
 
-const days: Day[] = [day01, day02];
+const days = [new Day01(), new Day02()];
 
-export const runAll = async () => {
+const runAll = async () => {
     for (const day of days) {
         await day.run();
     }
 };
+
+export default runAll;
