@@ -1,0 +1,12 @@
+import DayX from "./dayX";
+
+describe("Day X", () => {
+    let dayX: DayX;
+    beforeEach(() => {
+        dayX = new DayX();
+    });
+
+    it("should create", () => {
+        expect(dayX).toBeTruthy();
+    });
+});
