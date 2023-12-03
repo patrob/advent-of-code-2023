@@ -110,7 +110,7 @@ export default class Day01 extends Day {
             this.getSumOfMatchingNumbers(line)
         );
         const sum = sums.reduce((sum, number) => sum + number, 0);
-        console.log(`The sum of all matching numbers is ${sum}`);
+        console.log(`Part 1: ${sum}`);
     }
 
     override solvePart2(): void {
@@ -118,6 +118,6 @@ export default class Day01 extends Day {
             this.getSumOfMatchingNumbersNumericOrWord(line)
         );
         const sum = sums.reduce((sum, number) => sum + number, 0);
-        console.log(`The sum of all matching numbers is ${sum}`);
+        console.log(`Part 2: ${sum}`);
     }
 }
