@@ -16,4 +16,5 @@ sed -i -e "s/DayX/Day$num/g" src/$day/$day.ts
 sed -i -e "s/DayX/Day$num/g" src/$day/$day.spec.ts
 sed -i -e "s/dayX/day$num/g" src/$day/$day.spec.ts
 sed -i -e "s/X/$1/g" src/$day/$day.ts
+sed -i -e "s/X/$1/g" src/$day/$day.spec.ts
 rm -rf src/**/*.ts-e
