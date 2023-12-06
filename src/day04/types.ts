@@ -56,6 +56,15 @@ export const getCardCounts = (
     return counts.sort((a, b) => a.id - b.id);
 };
 
+export const pushCardMatches = (index: number, games: Game[]): Game[] => {
+    return Array(games[index].matches)
+        .fill(1)
+        .reduce<Game[]>((acc, _, i) => {
+            console.log("acc", acc);
+            return [...acc, { ...games[index + i + 1] }];
+        }, []);
+};
+
 export const doTheThing = (
     index: number,
     games: Game[],
@@ -65,12 +74,12 @@ export const doTheThing = (
         return cardStack.length;
     }
 
-    const cardCopies = cardStack.filter((x) => x.id === games[index].id);
-    for (let j = 0; j < Math.max(cardCopies.length + 1, 1); j++) {
-        for (let i = 1; i <= games[index].matches; i++) {
-            cardStack.push(games[index + i]);
-        }
-    }
+    const cardCopiesCount =
+        cardStack.filter((x) => x.id === games[index].id).length + 1;
+    Array(cardCopiesCount)
+        .fill(1)
+        .forEach(() => cardStack.push(...pushCardMatches(index, games)));
+
     cardStack.push(games[index]);
 
     return doTheThing(index + 1, games, cardStack);
