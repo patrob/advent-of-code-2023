@@ -9,7 +9,7 @@ day="day$num"
 
 echo "Creating Day $1 Files"
 mkdir src/$day
-touch src/$day/$day.ts src/$day/$day.spec.ts src/$day/input.txt
+touch src/$day/$day.ts src/$day/$day.spec.ts src/$day/input.txt src/$day/types.ts
 cat scripts/day-template.txt > src/$day/$day.ts
 cat scripts/day-spec-template.txt > src/$day/$day.spec.ts
 sed -i -e "s/DayX/Day$num/g" src/$day/$day.ts
