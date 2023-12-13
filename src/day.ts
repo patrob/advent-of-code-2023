@@ -10,7 +10,7 @@ export default abstract class Day {
             solveAll: boolean;
             solvePart1Only: boolean;
             solvePart2Only: boolean;
-        } = { solveAll: true, solvePart1Only: false, solvePart2Only: false }
+        } = { solveAll: true, solvePart1Only: false, solvePart2Only: false },
     ): Promise<void> => {
         this.inputData = await this.getInputData();
         this.printDayHeader();
